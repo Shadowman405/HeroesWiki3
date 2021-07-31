@@ -22,6 +22,7 @@
 		BF6313CE26B6085100E2B40E /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6313CD26B6085100E2B40E /* Spells.swift */; };
 		BF6313D026B60B5400E2B40E /* SpellsFirstLvlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6313CF26B60B5400E2B40E /* SpellsFirstLvlTableViewCell.swift */; };
 		BF6313D226B60BD000E2B40E /* SpellsFirstLvlTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6313D126B60BD000E2B40E /* SpellsFirstLvlTableViewController.swift */; };
+		BF6313D426B612EF00E2B40E /* SpellOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6313D326B612EF00E2B40E /* SpellOneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		BF6313CD26B6085100E2B40E /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
 		BF6313CF26B60B5400E2B40E /* SpellsFirstLvlTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsFirstLvlTableViewCell.swift; sourceTree = "<group>"; };
 		BF6313D126B60BD000E2B40E /* SpellsFirstLvlTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsFirstLvlTableViewController.swift; sourceTree = "<group>"; };
+		BF6313D326B612EF00E2B40E /* SpellOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellOneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				BF6313C726B5C63500E2B40E /* TownsTableViewController.swift */,
 				BF6313CB26B5FC0900E2B40E /* HeroesTableViewController.swift */,
 				BF6313D126B60BD000E2B40E /* SpellsFirstLvlTableViewController.swift */,
+				BF6313D326B612EF00E2B40E /* SpellOneViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				BF6313AA26B5B32200E2B40E /* AppDelegate.swift in Sources */,
 				BF6313AC26B5B32200E2B40E /* SceneDelegate.swift in Sources */,
 				BF6313CC26B5FC0900E2B40E /* HeroesTableViewController.swift in Sources */,
+				BF6313D426B612EF00E2B40E /* SpellOneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
