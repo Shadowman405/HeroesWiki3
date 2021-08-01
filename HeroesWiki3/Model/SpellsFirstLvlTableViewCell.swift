@@ -25,6 +25,6 @@ class SpellsFirstLvlTableViewCell: UITableViewCell {
         spellImage.image = UIImage(named: spells.spellImage)
         nameLbl.text = spells.name
         manaCoastLbl.text = "Mana coast: \(spells.manaCost)"
-        descriptionLbl.text = "Type - \(spells.type).\nDescription: \(spells.description)"
+        descriptionLbl.text = "Type: \(spells.type)"
     }
 }

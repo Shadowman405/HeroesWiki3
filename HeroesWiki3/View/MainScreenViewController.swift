@@ -8,13 +8,8 @@
 import UIKit
 
 class MainScreenViewController: UIViewController {
-    var townDataPass = towns
-    var heroDataPass = heroes
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    private var townDataPass = towns
+    private var heroDataPass = heroes
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "towns" {
@@ -27,11 +22,5 @@ class MainScreenViewController: UIViewController {
             }
         }
     }
-    
-    @IBAction func heroesButtonClicked() {
-        //performSegue(withIdentifier: "heroes", sender: self)
-        
-    }
-
 }
 

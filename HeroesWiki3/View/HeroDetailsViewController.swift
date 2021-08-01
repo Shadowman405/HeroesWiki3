@@ -16,7 +16,6 @@ class HeroDetailsViewController: UIViewController {
     @IBOutlet weak var heroFractionLbl: UILabel!
     @IBOutlet weak var heroStoryLbl: UILabel!
     
-    
     var heroDetails : Hero?
 
     override func viewDidLoad() {

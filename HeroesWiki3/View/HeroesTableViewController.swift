@@ -11,14 +11,9 @@ class HeroesTableViewController: UITableViewController {
     
     var data = [Hero]()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return data.count
     }
     
@@ -29,7 +24,6 @@ class HeroesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 1
     }
 
@@ -59,4 +53,6 @@ class HeroesTableViewController: UITableViewController {
         let hero = data[section]
         heroDetailsVC.heroDetails = hero
     }
+    
+
 }
