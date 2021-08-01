@@ -16,75 +16,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="5Mi-i4-X6k">
-                                <rect key="frame" x="0.0" y="88" width="414" height="395"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="395" id="DuC-Ii-QlX"/>
-                                </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="GVX-K3-S9s">
-                                <rect key="frame" x="142.5" y="503" width="129" height="336"/>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aAe-z1-i4N">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc8-Y4-1JE">
-                                        <rect key="frame" x="22.5" y="0.0" width="84" height="48"/>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                        <state key="normal" title="Towns">
-                                            <color key="titleColor" red="0.71346491580000004" green="0.56123250719999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="BBt-MT-xUg" kind="show" identifier="towns" id="RtA-0s-61z"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFf-FL-Dup">
-                                        <rect key="frame" x="17" y="72" width="95" height="48"/>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                        <state key="normal" title="Heroes">
-                                            <color key="titleColor" red="0.71346491580000004" green="0.56123250719999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="heroesButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jO-NP-8zO"/>
-                                            <segue destination="OeD-r4-ARw" kind="show" identifier="heroes" id="3Hx-uN-T1i"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFX-dk-rrf">
-                                        <rect key="frame" x="0.0" y="144" width="129" height="48"/>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                        <state key="normal" title="Creatures">
-                                            <color key="titleColor" red="0.71346491580000004" green="0.56123250719999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdC-jh-6vi">
-                                        <rect key="frame" x="9" y="216" width="111" height="48"/>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                        <state key="normal" title="Artifacts">
-                                            <color key="titleColor" red="0.71346491580000004" green="0.56123250719999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUh-fu-tsN">
-                                        <rect key="frame" x="25" y="288" width="79" height="48"/>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
-                                        <state key="normal" title="Spells">
-                                            <color key="titleColor" red="0.71346491580000004" green="0.56123250719999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="kse-9E-48F" kind="show" id="HPM-3i-jZb"/>
-                                        </connections>
-                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="5Mi-i4-X6k">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="382"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GVX-K3-S9s">
+                                        <rect key="frame" x="0.0" y="392" width="414" height="382"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc8-Y4-1JE">
+                                                <rect key="frame" x="165" y="0.0" width="84" height="72.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Towns">
+                                                    <color key="titleColor" red="0.71346491580000004" green="0.56123250719999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="BBt-MT-xUg" kind="show" identifier="towns" id="RtA-0s-61z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFf-FL-Dup">
+                                                <rect key="frame" x="159.5" y="77.5" width="95" height="72.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Heroes">
+                                                    <color key="titleColor" red="0.71346491580000004" green="0.56123250719999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="heroesButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jO-NP-8zO"/>
+                                                    <segue destination="OeD-r4-ARw" kind="show" identifier="heroes" id="3Hx-uN-T1i"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFX-dk-rrf">
+                                                <rect key="frame" x="142.5" y="155" width="129" height="72"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Creatures">
+                                                    <color key="titleColor" red="0.71346491580000004" green="0.56123250719999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdC-jh-6vi">
+                                                <rect key="frame" x="151.5" y="232" width="111" height="72.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Artifacts">
+                                                    <color key="titleColor" red="0.71346491580000004" green="0.56123250719999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUh-fu-tsN">
+                                                <rect key="frame" x="167.5" y="309.5" width="79" height="72.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                                <state key="normal" title="Spells">
+                                                    <color key="titleColor" red="0.71346491580000004" green="0.56123250719999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="kse-9E-48F" kind="show" id="HPM-3i-jZb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.42385730150000001" green="0.070945478980000004" blue="0.017744664100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5Mi-i4-X6k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Ma-M4-DQC"/>
-                            <constraint firstItem="5Mi-i4-X6k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3jL-La-D8e"/>
-                            <constraint firstItem="5Mi-i4-X6k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gcb-Im-GuW"/>
-                            <constraint firstItem="GVX-K3-S9s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kub-fc-7pi"/>
-                            <constraint firstItem="GVX-K3-S9s" firstAttribute="top" secondItem="5Mi-i4-X6k" secondAttribute="bottom" constant="20" id="PDm-Om-bD2"/>
-                            <constraint firstItem="5Mi-i4-X6k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZV5-RX-fhz"/>
-                            <constraint firstItem="5Mi-i4-X6k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eT9-dy-6EY"/>
-                            <constraint firstItem="5Mi-i4-X6k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wYG-QV-9PL"/>
-                            <constraint firstItem="5Mi-i4-X6k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="x23-ya-Bu4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aAe-z1-i4N" secondAttribute="bottom" id="O5H-z2-pO9"/>
+                            <constraint firstItem="aAe-z1-i4N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RIu-Jc-wOd"/>
+                            <constraint firstItem="aAe-z1-i4N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vei-Tm-7DC"/>
+                            <constraint firstAttribute="trailing" secondItem="aAe-z1-i4N" secondAttribute="trailing" id="meV-bR-VtB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Heroes Wiki" id="HRZ-zh-8ig"/>
@@ -109,6 +106,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ivd-D7-hAP" kind="show" id="h2e-kV-ZOU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -121,6 +121,98 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTf-Yd-X3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1858" y="-151"/>
+        </scene>
+        <!--Hero Details View Controller-->
+        <scene sceneID="VYU-gH-a5W">
+            <objects>
+                <viewController id="ivd-D7-hAP" customClass="HeroDetailsViewController" customModule="HeroesWiki3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XUK-cG-WHy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BZB-66-eLi">
+                                <rect key="frame" x="20" y="108" width="374" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HCr-Ea-UT6">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="PMg-Bs-MdP"/>
+                                            <constraint firstAttribute="height" constant="128" id="uzw-Ko-QU1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GFz-AC-lno">
+                                        <rect key="frame" x="148" y="0.0" width="226" height="106"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkd-s4-tle">
+                                                <rect key="frame" x="0.0" y="0.0" width="226" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEf-KV-p4Q">
+                                                <rect key="frame" x="0.0" y="28.5" width="226" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specialization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfd-OZ-6AA">
+                                                <rect key="frame" x="0.0" y="57" width="226" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fraction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UB-5J-sfr">
+                                                <rect key="frame" x="0.0" y="85.5" width="226" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eFa-VF-woY">
+                                <rect key="frame" x="20" y="246" width="374" height="53"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hero story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnB-gI-ljO">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH7-ro-P8M">
+                                        <rect key="frame" x="0.0" y="33.5" width="39.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vja-cT-Y3c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vja-cT-Y3c" firstAttribute="trailing" secondItem="eFa-VF-woY" secondAttribute="trailing" constant="20" id="3uc-WW-Wce"/>
+                            <constraint firstItem="Vja-cT-Y3c" firstAttribute="trailing" secondItem="BZB-66-eLi" secondAttribute="trailing" constant="20" id="CUg-4i-B4c"/>
+                            <constraint firstItem="eFa-VF-woY" firstAttribute="top" secondItem="BZB-66-eLi" secondAttribute="bottom" constant="10" id="Hp6-Rf-3Rp"/>
+                            <constraint firstItem="BZB-66-eLi" firstAttribute="top" secondItem="Vja-cT-Y3c" secondAttribute="top" constant="20" id="dSX-bA-Vq8"/>
+                            <constraint firstItem="BZB-66-eLi" firstAttribute="leading" secondItem="Vja-cT-Y3c" secondAttribute="leading" constant="20" id="reW-cd-xch"/>
+                            <constraint firstItem="eFa-VF-woY" firstAttribute="leading" secondItem="Vja-cT-Y3c" secondAttribute="leading" constant="20" id="wXk-72-TNh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rBd-hG-TuI"/>
+                    <connections>
+                        <outlet property="herClassLbl" destination="jEf-KV-p4Q" id="4os-QG-tSd"/>
+                        <outlet property="heroFractionLbl" destination="8UB-5J-sfr" id="XJV-nt-kRO"/>
+                        <outlet property="heroImage" destination="HCr-Ea-UT6" id="lqf-ly-FNp"/>
+                        <outlet property="heroNameLbl" destination="dkd-s4-tle" id="i0C-7a-6Vx"/>
+                        <outlet property="heroSpecsLbl" destination="pfd-OZ-6AA" id="FkR-Gv-QVk"/>
+                        <outlet property="heroStoryLbl" destination="DH7-ro-P8M" id="N5t-lO-VBF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NIi-nK-vWg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2733" y="-151"/>
         </scene>
         <!--Item-->
         <scene sceneID="tar-Rs-W18">

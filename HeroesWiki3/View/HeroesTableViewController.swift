@@ -24,7 +24,7 @@ class HeroesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let section = data[section]
-        let nameForSection = "\(section.name) - \(section.heroClass)"
+        let nameForSection = "\(section.name) from  - \(section.fraction) "
         return nameForSection
     }
 
@@ -49,9 +49,14 @@ class HeroesTableViewController: UITableViewController {
             content.text = section.specialization
             cell.contentConfiguration = content
         }
-
         return cell
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let heroDetailsVC = segue.destination as? HeroDetailsViewController else {return}
+        guard let section = tableView.indexPathForSelectedRow?.section else {return}
+        
+        let hero = data[section]
+        heroDetailsVC.heroDetails = hero
+    }
 }

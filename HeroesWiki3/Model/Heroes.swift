@@ -13,4 +13,5 @@ struct Hero {
     var specialization: String
     var fraction: String
     var imageName: String
+    var story: String
 }
